@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MyActivity">
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="347dp"
+            android:layout_height="370dp"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/taxilogos" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:text="Login as Rider"
+            android:textColor="@color/black"
+            android:textSize="10pt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextFieldEmail"
+            style="@style/TextInputLayout"
+            android:layout_width="334dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="30dp"
+            android:hint="Email"
+            app:boxStrokeColor="@color/black"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:inputType="textEmailAddress"
+                android:outlineSpotShadowColor="@color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextFieldpass"
+            style="@style/TextInputLayout"
+            android:layout_width="334dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="20dp"
+            android:hint="Password"
+            app:hintTextColor="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/filledTextFieldEmail">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textVisiblePassword"
+                android:background="@android:color/transparent"
+                android:outlineSpotShadowColor="@color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/filledTextFieldpass" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You already have an Account"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:layout_constraintVertical_bias="0.58" />
+        <!-- Here you put the rest of your current view-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
